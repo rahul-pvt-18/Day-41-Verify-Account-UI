@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Verify Account UI</title>
+</head>
+<body>
+    
+    <!-- The wrapper div contains the main content area -->
+    <div class="wrapper">
+        <!-- The container div holds the elements related to the account verification UI -->
+        <div class="container">
+            <!-- The heading to inform users to verify their account -->
+            <h2>Verify your Account</h2>
+            <p>
+                <!-- Explanation of the verification process -->
+                We had sent a six-digit code to your Mail account <br>
+                Enter the code below to confirm your email address.
+            </p>
+            <!-- The code-container div holds the input fields for entering the verification code -->
+            <div class="code-container">
+                <!-- Each input field is for one digit of the six-digit verification code -->
+                <input type="number" class="code" 
+                placeholder="0" min="0" max="9" required>
+                <input type="number" class="code" 
+                placeholder="0" min="0" max="9" required>
+                <input type="number" class="code" 
+                placeholder="0" min="0" max="9" required>
+                <input type="number" class="code" 
+                placeholder="0" min="0" max="9" required>
+                <input type="number" class="code" 
+                placeholder="0" min="0" max="9" required>
+                <input type="number" class="code" 
+                placeholder="0" min="0" max="9" required>
+            </div>
+            <!-- A small info section to clarify that this is just a design and not an actual email -->
+            <small class="info">This is the design only. We didn't actually send you an email as we don't have your email address</small>
+        </div>
+    </div>
+
+    <!-- The script.js file contains JavaScript code related to this page, it is referenced here -->
+    <script src="/script.js"></script>
+</body>
+</html>
